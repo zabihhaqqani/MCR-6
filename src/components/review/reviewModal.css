@@ -18,7 +18,18 @@ form {
   background: white;
   border: 1px solid;
   padding: 1rem;
-  width: 70%;
+  width: 30%;
   border-radius: 0.6rem;
   gap: 1rem;
+}
+
+select {
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+textarea {
+    padding: 1rem;
+    border-radius: 5px;
+
 }

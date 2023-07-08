@@ -1,0 +1,52 @@
+.page-container{
+    display: flex;
+    justify-content: center;
+}
+
+.page-container i {
+    margin: 1.5rem;
+}
+
+.menu-details-container{
+    display: flex;
+}
+
+.menu-details-container button{
+    margin-left: 1rem;
+    margin-top: 0rem;
+}
+
+.address{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: left;
+}
+
+.review{
+    text-align: left;
+    display: flex;
+    justify-content: left;
+}
+
+.comment {
+    text-align: left;
+    margin: 1rem 0rem;
+}
+.rating-i{
+    background-color: green;
+    margin-left: 1rem;
+    padding: 0rem 1rem;
+    color: white;
+    border-radius: 5px;
+}
+
+.review img {
+    border-radius: 50%;
+    width: 40px;
+    margin-right: 1rem;
+}
+
+hr{
+    margin: 1rem 0rem;
+}

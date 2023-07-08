@@ -25,7 +25,7 @@ const ReviewModal = ({name}) => {
             <form onSubmit={submitHandler} action="">
                 <h3>Add Your Review</h3>
                 <select name="rating" onChange={changeHandler}
-                    value="">
+                    value={reviewRating?.rating}>
                     <option disabled>✓ Select Rating</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -34,7 +34,7 @@ const ReviewModal = ({name}) => {
                     <option value="5">5</option>
 
                 </select>
-                <textarea onChange={changeHandler}  name="comment" id="" cols="30" rows="10"></textarea>
+                <textarea onChange={changeHandler}  name="comment" id="" cols="10" rows="10"></textarea>
                 <button  className='cuisine-btn' type='submit'>Submit</button>
                 {/* onClick={() => setIsAdd(false)} */}
             </form>

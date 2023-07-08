@@ -7,7 +7,7 @@ import "./page.css"
 function Page() {
   const { restaurant, data, reviewBtnHandler, isAdd, setIsAdd } = useDataContext();
 
-  const filteredData = data?.filter((item) => item.name === restaurant);
+  const filteredData = data?.filter((item) => item?.name === restaurant);
   const navigate = useNavigate()
   return (
     <div className="page-container">

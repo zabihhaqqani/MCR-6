@@ -1,13 +1,20 @@
-import React from "react";
+import React from 'react'
+import MenuCard from './menuCard'
 
-function ProductCard() {
-  //  const { id, author, title, url, category } = item;
+const ProductCard = ({ item }) => {
+    const { id, name, menu } = item
 
   return (
-    <div className="product-container">
-     
+      <div >
+          <h3>Cuisines By {name}</h3>
+          {/* <img src="" alt="" /> */}
+          <div className='menu-card-container'>
+          {menu?.map((data,index) => {
+              return <MenuCard key={index} item={data} restaurentName={name} />
+          })}
+          </div>
     </div>
-  );
+  )
 }
 
-export default ProductCard;
+export default ProductCard

@@ -1,0 +1,24 @@
+.bat-card{
+    display: flex;
+    /* justify-content: space-between; */
+    margin: 0.5rem;
+}
+.bat-border-1{
+    border: 0.5px solid grey;
+    border-radius: 5px;
+}
+
+.menu-card-container{
+    display: flex;
+    justify-content: center;
+}
+
+.bat-card:hover{
+    cursor: pointer;
+    background-color: rgba(173, 173, 173, 0.199);
+}
+
+
+#images{
+    height: 60%;
+}

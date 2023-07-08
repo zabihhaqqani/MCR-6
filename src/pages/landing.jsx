@@ -1,14 +1,23 @@
 import React from 'react'
 import { useDataContext } from '../components/context/context'
-import ProductCard from '../components/productCard/productCard';
+import { cuisineData } from '../database/cuisineData';
+import Buttons from '../components/button/buttons';
+import CuisineSection from '../components/cuisines/cuisinesSection';
 
 function LandingPage() {
-    const {dataState}= useDataContext()
-    console.log(dataState.a);
+  const { dataState } = useDataContext()
+  
   return (
     <div>
-      <h3>home</h3>
-      <ProductCard/>
+      <h2>Food Ordering App</h2>
+
+      <h3>Select Your Cuisine: </h3>
+      <ul className="btn-container">
+        {cuisineData?.map(data => {
+          return <Buttons key={data?.id} item={data} />
+        })}
+      </ul>
+      <CuisineSection />
     </div>
   );
 }

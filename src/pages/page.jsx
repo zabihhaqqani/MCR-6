@@ -13,7 +13,7 @@ function Page() {
     <div className="page-container">
       <i onClick={() => navigate("/")} className="fas fa-arrow-left fa-lg"></i>
     <div>
-      <h2>{restaurant}</h2>
+      <h3>{restaurant}</h3>
         {/* {!filteredData  ? "":'Go Back to Home Page and select a cuisine'} */}
       {filteredData?.map((item) => {
         const {
@@ -48,7 +48,7 @@ function Page() {
             </div>
             <hr />
             <div >
-            <h2>Reviews</h2>
+            <h4>Reviews</h4>
             {ratings?.map((item, index) => (
               <div key={index}>
                 <div className="review">

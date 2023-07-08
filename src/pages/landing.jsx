@@ -6,12 +6,12 @@ import CuisineSection from '../components/cuisines/cuisinesSection';
 
 function LandingPage() {
   const { dataState } = useDataContext()
-  
+
   return (
     <div>
-      <h2>Food Ordering App</h2>
+      <h3 className='title'>Food Ordering App</h3>
 
-      <h3>Select Your Cuisine: </h3>
+      <h4>Select Your Cuisine: </h4>
       <ul className="btn-container">
         {cuisineData?.map(data => {
           return <Buttons key={data?.id} item={data} />

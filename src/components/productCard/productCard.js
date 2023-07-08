@@ -7,7 +7,6 @@ const ProductCard = ({ item }) => {
   return (
       <div >
           <h3>Cuisines By {name}</h3>
-          {/* <img src="" alt="" /> */}
           <div className='menu-card-container'>
           {menu?.map((data,index) => {
               return <MenuCard key={index} item={data} restaurentName={name} />

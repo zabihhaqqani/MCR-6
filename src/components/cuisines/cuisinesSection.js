@@ -6,8 +6,8 @@ const CuisineSection = () => {
 
     const { data, setData } = useDataContext()
 
+    
     const filteredData = data?.filter(item => item)
-
     useEffect(() => { setData([]) }, [])
     return (
         <div >

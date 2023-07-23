@@ -3,7 +3,7 @@ import "./reviewModal.css"
 import { useDataContext } from '../context/context'
 
 const ReviewModal = ({name}) => {
-    const {isAdd,setIsAdd,addReview} = useDataContext()
+    const {setIsAdd,addReview} = useDataContext()
 
     const [reviewRating,setReviewRating] = useState({
         rating:"",
@@ -36,7 +36,6 @@ const ReviewModal = ({name}) => {
                 </select>
                 <textarea onChange={changeHandler}  name="comment" id="" cols="10" rows="10"></textarea>
                 <button  className='cuisine-btn' type='submit'>Submit</button>
-                {/* onClick={() => setIsAdd(false)} */}
             </form>
         </div>
     )

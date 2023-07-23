@@ -2,7 +2,7 @@ import React from 'react'
 import MenuCard from './menuCard'
 
 const ProductCard = ({ item }) => {
-    const { id, name, menu } = item
+    const {  name, menu } = item
 
   return (
       <div >

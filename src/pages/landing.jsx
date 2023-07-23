@@ -5,7 +5,6 @@ import Buttons from '../components/button/buttons';
 import CuisineSection from '../components/cuisines/cuisinesSection';
 
 function LandingPage() {
-  const { dataState } = useDataContext()
 
   return (
     <div>
